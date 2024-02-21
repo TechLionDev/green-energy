@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <>
       <motion.section
-        className='text-center justify-center items-center flex flex-col gap-4 bg-crust py-16 h-[500px]'
+        className='text-center justify-center items-center flex flex-col gap-8 bg-crust py-16 h-[500px]'
         initial={{ opacity: 0, scale: 0 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
@@ -48,6 +48,9 @@ const Hero = () => {
           <motion.button
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
+            onClick={() => {
+              document.getElementById("down").scrollIntoView({ behavior: "smooth" });
+            }}
             className='border-green-500 border-2 hover:bg-green-700 text-white font-bold py-2 px-4 rounded'
           >
             Read More

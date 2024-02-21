@@ -5,7 +5,9 @@ export default function App({ Component, pageProps }) {
   return (
   <>
     <Navbar />
-    <Component {...pageProps} />
+    <div class="z-0 h-screen">
+      <Component {...pageProps} />
+    </div>
   </>
   );
 }

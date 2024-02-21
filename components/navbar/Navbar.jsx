@@ -24,7 +24,7 @@ const Navbar = () => {
   ];
   return (
     <>
-      <nav className='p-6 flex w-full justify-between'>
+      <nav className='p-6 flex w-full justify-between drop-shadow-2xl z-50 fixed mb-4 bg-gradient-to-b from-base to-transparent from-60%'>
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
