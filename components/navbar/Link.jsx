@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 const Link = ({ link }) => {
   // Define variants for the animation
   const linkHoverVariant = {
-    initial: { width: '0%' }, // Initial state with width 0%
-    hover: { width: '100%' }   // State when hovered with width 100%
+    initial: link.active ? { width: '100%' }: { width: '0%'},
+    hover: { width: '100%' }
   };
 
   return (

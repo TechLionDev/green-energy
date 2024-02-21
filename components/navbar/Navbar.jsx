@@ -1,19 +1,25 @@
 import { motion } from "framer-motion";
 import Links from "./Links";
+import { useRouter } from 'next/router';
 
 const Navbar = () => {
+  const router = useRouter();
+  const currentRoute = router.pathname;
   let links = [
     {
       name: "Home",
-      url: "/"
+      url: "/",
+      active: currentRoute === "/"
     },
     {
       name: "About",
-      url: "/about"
+      url: "/about",
+      active: currentRoute === "/about"
     },
     {
       name: "Contact",
-      url: "/contact"
+      url: "/contact",
+      active: currentRoute === "/contact"
     }
   ];
   return (
@@ -23,7 +29,8 @@ const Navbar = () => {
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
-          className='flex justify-start items-center font-bold'
+          className='flex justify-start items-center font-bold cursor-pointer'
+          onClick={() => router.push('/')}
         >
           <motion.img
             src='/Logo.png'
