@@ -27,7 +27,7 @@ const Services = () => {
   ];
   return (
     <>
-      <div id='down'>
+      <div>
         <div className='grid lg:grid-cols-3 lg:grid-rows-1 lg:gap-6 lg:mt-48 gap-24 mt-24 p-6 h-full'>
           {services.map((service, index) => {
             return (

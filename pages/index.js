@@ -9,6 +9,7 @@ const Home = () => {
     <>
       <CHead title='Home' />
       <Hero/>
+      <div id='down' className="h-12"></div>
       <Services/>
       <SignUp/>
       <Footer/>
