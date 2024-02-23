@@ -10,6 +10,7 @@ const Home = () => {
       <CHead title='Home' />
       <Hero/>
       <div id='down' className="h-12"></div>
+      {/* TODO: Services Heading */}
       <Services/>
       <SignUp/>
       <Footer/>

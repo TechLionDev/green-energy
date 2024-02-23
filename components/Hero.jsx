@@ -51,14 +51,14 @@ const Hero = () => {
             onClick={() => {
               document.getElementById("down").scrollIntoView({ behavior: "smooth" });
             }}
-            className='border-green-500 border-2 hover:bg-green-700 text-white font-bold py-2 px-4 rounded'
+            className='border-green border-2 hover:bg-green font-bold py-2 px-4 rounded hover:text-crust'
           >
             Read More
           </motion.button>
           <motion.button
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            className='bg-green-500 border-2 border-green-700 hover:bg-transparent text-white font-bold py-2 px-4 rounded'
+            className='bg-green border-2 border-green hover:bg-transparent font-bold py-2 px-4 rounded text-crust hover:text-text'
           >
             Show Me Prices!
           </motion.button>
