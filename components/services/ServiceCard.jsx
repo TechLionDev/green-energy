@@ -1,6 +1,10 @@
 import { motion } from "framer-motion";
 
 const ServiceCard = ({ service }) => {
+  const linkHoverVariant = {
+    initial: { width: "0%" },
+    hover: { width: "100%" }
+  };
   return (
     <>
       <motion.div
@@ -26,7 +30,7 @@ const ServiceCard = ({ service }) => {
           {service.name}
         </motion.h2>
         <motion.p
-          className='text-lg text-gray-600'
+          className='text-lg text-overlay0'
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 1.4 }}
@@ -35,12 +39,21 @@ const ServiceCard = ({ service }) => {
         </motion.p>
         <motion.a
           href={service.link}
-          className='text-blue-500 hover:underline'
-          initial={{ opacity: 0, y: 20 }}
+          className='inline-block text-blue'
+          initial='initial'
+          whileHover='hover'
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 1.6 }}
         >
           Learn More
+          <motion.div
+            className='bg-blue -mt-1 h-[2px] w-0'
+            variants={linkHoverVariant}
+            transition={{ 
+                duration: 0.3,
+                ease: 'easeOut'
+            }}
+          />
         </motion.a>
       </motion.div>
     </>

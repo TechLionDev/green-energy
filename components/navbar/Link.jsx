@@ -16,7 +16,7 @@ const Link = ({ link }) => {
         >
           {link.name}
           <motion.div
-            className="bg-green-500 h-[2px] w-0"
+            className="bg-green h-[2px] w-0"
             variants={linkHoverVariant}
             transition={{ 
                 duration: 0.3,
