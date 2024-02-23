@@ -6,6 +6,12 @@ body {
     @apply bg-base text-text
 }
 
+@media (prefers-color-scheme: dark) {
+    body {
+        @apply mocha;
+    }
+}
+
 * {
     user-select: none;
 }
