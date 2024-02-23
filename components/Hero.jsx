@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <>
       <motion.section
-        className='text-center justify-center items-center flex flex-col gap-8 bg-crust py-16 h-[500px]'
+        className='text-center justify-center items-center flex flex-col gap-8 bg-crust py-16 h-screen'
         initial={{ opacity: 0, scale: 0 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
