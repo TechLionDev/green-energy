@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 
-
 const Footer = () => {
     const linkHoverVariant = {
         initial: { width: '0%'},
@@ -13,7 +12,6 @@ const Footer = () => {
       transition={{ duration: 0.5 }}
       className='bg-base text-text p-4 text-center'
     >
-      <p>
         &copy; 2024 {' '}
         <motion.a href="https://techlion.dev" className="inline-block text-green"
         initial="initial"
@@ -29,7 +27,6 @@ const Footer = () => {
             }}
           />
         </motion.a>
-      </p>
     </motion.footer>
   );
 };
