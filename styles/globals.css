@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-    @apply bg-base text-text
+    @apply bg-base text-text overflow-auto
 }
 
 @media (prefers-color-scheme: dark) {
@@ -28,4 +28,45 @@ select:focus,
 textarea:focus,
 button:focus {
   outline: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background-color: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(166, 227, 161);
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(131, 179, 127);
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+}
+@media (prefers-color-scheme: light) {
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background-color: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(64, 160, 43);
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(50, 124, 33);
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
 }

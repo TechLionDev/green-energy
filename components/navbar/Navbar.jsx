@@ -15,22 +15,17 @@ const Navbar = () => {
       name: "About",
       url: "/about",
       active: currentRoute === "/about"
-    },
-    {
-      name: "Contact",
-      url: "/contact",
-      active: currentRoute === "/contact"
     }
   ];
   return (
     <>
-      <nav className='p-6 flex w-full justify-between drop-shadow-2xl z-50 fixed mb-4 bg-gradient-to-b from-base to-transparent from-60%'>
+      <nav className='p-4 flex w-full justify-between drop-shadow-2xl z-50 fixed mb-4 bg-base'>
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
           className='flex justify-start items-center font-bold cursor-pointer'
-          onClick={() => router.push('/')}
+          onClick={() => window.location.replace('/')}
         >
           <motion.img
             src='/Logo.png'
