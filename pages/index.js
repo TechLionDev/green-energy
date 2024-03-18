@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import SignUp from "@/components/newsletter/SignUp";
 import Services from "@/components/services/Services";
-
+// TODO: Light Mode LOGO
 const Home = () => {
   if (typeof window !== 'undefined') {
     window.scrollTo(0, 0);

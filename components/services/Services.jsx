@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const Services = () => {
   const services = [
     {
-      name: "Government",
+      name: "Governmental",
       description:
         "Implementing green energy solutions in governmental buildings is a pivotal step towards sustainability and reducing carbon footprints. Through the integration of renewable energy sources such as solar panels, wind turbines, and geothermal systems, these buildings can significantly decrease their reliance on non-renewable energy and mitigate environmental impacts. Moreover, energy-efficient technologies like LED lighting, smart thermostats, and energy management systems can further enhance energy conservation efforts. By leading by example, governmental institutions can inspire broader adoption of green energy practices, contributing to a more eco-friendly and resilient future.",
       link: "/energy",
