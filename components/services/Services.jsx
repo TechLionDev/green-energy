@@ -7,21 +7,21 @@ const Services = () => {
       name: "Government",
       description:
         "Implementing green energy solutions in governmental buildings is a pivotal step towards sustainability and reducing carbon footprints. Through the integration of renewable energy sources such as solar panels, wind turbines, and geothermal systems, these buildings can significantly decrease their reliance on non-renewable energy and mitigate environmental impacts. Moreover, energy-efficient technologies like LED lighting, smart thermostats, and energy management systems can further enhance energy conservation efforts. By leading by example, governmental institutions can inspire broader adoption of green energy practices, contributing to a more eco-friendly and resilient future.",
-      link: "/services/government",
+      link: "/energy",
       img: "/Gov.jpg"
     },
     {
       name: "Residential",
       description:
         "Green energy solutions for residential buildings involve implementing renewable energy sources such as solar panels, wind turbines, or geothermal systems to power homes. These solutions not only reduce carbon emissions but also lower energy bills for homeowners. Additionally, energy-efficient appliances, LED lighting, and smart home technology can further optimize energy usage. By incorporating these sustainable practices into residential buildings, we can contribute to a more environmentally friendly and sustainable future while also improving the comfort and affordability of living spaces for residents.",
-      link: "/services/residential",
+      link: "/energy",
       img: "/Res.jpg"
     },
     {
       name: "Commercial",
       description:
         "Green energy solutions for commercial buildings encompass a range of technologies and practices aimed at reducing environmental impact and increasing energy efficiency. These solutions include the installation of solar panels on rooftops to harness renewable energy, implementing energy-efficient lighting systems and appliances, optimizing heating, ventilation, and air conditioning (HVAC) systems, and incorporating smart building technologies to monitor and control energy usage. Additionally, green building designs prioritize natural lighting, ventilation, and insulation to minimize the need for artificial heating and cooling. By adopting these green energy solutions, commercial buildings can significantly decrease their carbon footprint, lower energy costs, and contribute to a more sustainable future.",
-      link: "/services/commercial",
+      link: "/energy",
       img: "/Com.jpg"
     }
   ];
