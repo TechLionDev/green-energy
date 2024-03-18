@@ -75,9 +75,9 @@ const About = () => {
           <p className='text-lg mb-4'>
             At Green Energy, we are committed to providing homeowners with the
             knowledge, tools, and resources they need to make informed decisions
-            about green energy solutions. Whether you're interested in
+            about green energy solutions. Whether you&apos;re interested in
             installing solar panels, upgrading to energy-efficient appliances,
-            or improving your home's insulation, we're here to help every step
+            or improving your home&apos;s insulation, we&apos;re here to help every step
             of the way.
           </p>
         </motion.div>
@@ -140,8 +140,8 @@ const About = () => {
         >
           <h2 className='text-2xl font-bold mb-4'>Contact Us</h2>
           <p className='text-lg mb-4'>
-            Ready to get started? Have questions or concerns? Don't hesitate to
-            reach out to our friendly team. We're here to help you every step of
+            Ready to get started? Have questions or concerns? Don&apos;t hesitate to
+            reach out to our friendly team. We&apos;re here to help you every step of
             the way on your journey to a more sustainable lifestyle.
           </p>
           <motion.a

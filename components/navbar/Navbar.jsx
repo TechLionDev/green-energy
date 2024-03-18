@@ -15,6 +15,11 @@ const Navbar = () => {
       name: "About",
       url: "/about",
       active: currentRoute === "/about"
+    },
+    {
+      name: "Energy",
+      url: "/energy",
+      active: currentRoute === "/energy"
     }
   ];
   return (
@@ -36,7 +41,7 @@ const Navbar = () => {
             transition={{ duration: 0.5 }}
           />
           <motion.p
-            className="text-xl"
+            className="hidden sm:inline text-2xl pb-2"
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
