@@ -17,6 +17,11 @@ const Navbar = () => {
       active: currentRoute === "/about"
     },
     {
+      name: "Pricing",
+      url: "/pricing",
+      active: currentRoute === "/pricing"
+    },
+    {
       name: "Energy",
       url: "/energy",
       active: currentRoute === "/energy"

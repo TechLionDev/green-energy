@@ -162,7 +162,6 @@ const About = () => {
           </motion.a>
         </motion.div>
       </div>
-      <Footer />
     </>
   );
 };

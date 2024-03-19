@@ -15,7 +15,6 @@ const Home = () => {
       <div id='down' className="h-24"></div>
       <Services/>
       <SignUp/>
-      <Footer/>
     </>
   );
 };

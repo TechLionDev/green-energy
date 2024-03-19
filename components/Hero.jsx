@@ -49,7 +49,9 @@ const Hero = () => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             onClick={() => {
-              document.getElementById("down").scrollIntoView({ behavior: "smooth" });
+              document
+                .getElementById("down")
+                .scrollIntoView({ behavior: "smooth" });
             }}
             className='border-green border-2 hover:bg-green font-bold py-2 px-4 rounded hover:text-crust'
           >
@@ -59,6 +61,9 @@ const Hero = () => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             className='bg-green border-2 border-green hover:bg-transparent font-bold py-2 px-4 rounded text-crust hover:text-base dark:hover:text-text'
+            onClick={() => {
+              window.location.href = "/pricing";
+            }}
           >
             Show Me Prices!
           </motion.button>

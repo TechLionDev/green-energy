@@ -56,7 +56,6 @@ const Energy = () => {
           imgalt={"Biomass Energy"}
         />
       </div>
-      <Footer />
     </>
   );
 };
