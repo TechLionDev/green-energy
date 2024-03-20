@@ -25,16 +25,21 @@ const Navbar = () => {
       name: "Energy",
       url: "/energy",
       active: currentRoute === "/energy"
+    },
+    {
+      name: "Incentives",
+      url: "/incentives",
+      active: currentRoute === "/incentives"
     }
   ];
   return (
     <>
-      <nav className='p-4 flex w-full justify-between drop-shadow-2xl z-50 fixed mb-4 bg-base'>
+      <nav className='fixed z-50 flex justify-between w-full p-4 mb-4 drop-shadow-2xl bg-base'>
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
-          className='flex justify-start items-center font-bold cursor-pointer'
+          className='flex items-center justify-start font-bold cursor-pointer'
           onClick={() => window.location.replace('/')}
         >
           <motion.img
@@ -46,7 +51,7 @@ const Navbar = () => {
             transition={{ duration: 0.5 }}
           />
           <motion.p
-            className="hidden sm:inline text-2xl pb-2"
+            className="hidden pb-2 text-2xl sm:inline"
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
@@ -54,7 +59,7 @@ const Navbar = () => {
             Green Energy
           </motion.p>
         </motion.div>
-        <div className='flex justify-end items-center'>
+        <div className='flex items-center justify-end'>
           <Links links={links} />
         </div>
       </nav>
