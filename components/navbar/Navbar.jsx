@@ -84,14 +84,6 @@ const Navbar = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           />
-          <motion.p
-            className="hidden pb-2 text-2xl sm:inline"
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            Green Energy
-          </motion.p>
         </motion.div>
         <div className="flex items-center justify-end w-[40px]"></div>
       </nav>
