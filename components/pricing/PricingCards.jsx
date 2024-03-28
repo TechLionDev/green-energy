@@ -55,7 +55,7 @@ const PricingCards = () => {
   ];
   return (
     <>
-      <div className='flex gap-4 p-6 m-6 items-stretch'>
+      <div className='flex md:flex-row flex-col gap-4 p-6 m-6 items-stretch'>
         {plans.map((plan, index) => (
           <PricingCard key={index} plan={plan} />
         ))}

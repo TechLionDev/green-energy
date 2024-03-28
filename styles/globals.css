@@ -6,12 +6,6 @@ body {
     @apply bg-base text-text overflow-auto
 }
 
-@media (prefers-color-scheme: dark) {
-    body {
-        @apply mocha;
-    }
-}
-
 * {
     user-select: none;
 }
